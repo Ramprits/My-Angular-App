@@ -1,3 +1,30 @@
-<p>
-  nav works!
-</p>
+<nav class="navbar navbar-toggleable-md bg-info">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+   	    <span class="navbar-toggler-bar bar1"></span>
+	    <span class="navbar-toggler-bar bar2"></span>
+	    <span class="navbar-toggler-bar bar3"></span>
+ 	</button>
+        <a class="navbar-brand" href="#pablo">
+	    Dhanai Fruits Karts
+	</a>
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/events']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                        Events
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pablo">Clients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pablo">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

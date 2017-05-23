@@ -1,9 +1,14 @@
-<h1>
-    {{title}}
-</h1>
+<yo-nav></yo-nav>
+<div class="row">
 
-<button kendoButton (click)="onButtonClick()" [primary]="true">
+    <div class="offset-md-2 col-md-10">
+        <router-outlet></router-outlet>
+        <h1>
+            {{title}}
+        </h1>
+
+        <button kendoButton (click)="onButtonClick()" [primary]="true">
   My Kendo UI Button
   </button>
-
-
+    </div>
+</div>

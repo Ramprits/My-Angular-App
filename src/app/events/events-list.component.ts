@@ -5,7 +5,7 @@ import { Component } from '@angular/core'
   selector: 'events-list',
   template: `
   <div>
-    <h1>Upcoming Angular 2 Events</h1>
+    <h5>Upcoming Angular 2 Events</h5>
     <hr/>
     <event-thumbnail [event]="event1"></event-thumbnail>
   </div>

@@ -1,3 +1,5 @@
+import './rxjs.extension';
+import { LoginComponent } from './user/login/login.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -10,6 +12,9 @@ import { NavComponent } from './nav/nav.component';
 import { EventThumbnailComponent } from 'app/events/event-thumbnail.component';
 import { EventsListComponent } from 'app/events/events-list.component';
 import { ContactComponent } from './contact/contact.component';
+import { CustomerComponent } from './customer/customer.component';
+import { GridModule } from '@progress/kendo-angular-grid';
+import { LayoutModule } from '@progress/kendo-angular-layout';
 
 @NgModule({
   declarations: [
@@ -17,7 +22,9 @@ import { ContactComponent } from './contact/contact.component';
     NavComponent,
     EventThumbnailComponent,
     EventsListComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent,
+    CustomerComponent
   ],
   imports: [
     BrowserModule,
@@ -25,8 +32,8 @@ import { ContactComponent } from './contact/contact.component';
     HttpModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ButtonsModule
-
+    ButtonsModule,
+    GridModule, LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

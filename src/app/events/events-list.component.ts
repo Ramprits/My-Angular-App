@@ -25,5 +25,5 @@ export class EventsListComponent {
       country: 'England'
     }
   };
-// tslint:disable-next-line:eofline
+  // tslint:disable-next-line:eofline
 }

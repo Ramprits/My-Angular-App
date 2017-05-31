@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { CustomerComponent } from './customer/customer.component';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { LayoutModule } from '@progress/kendo-angular-layout';
+import { RegisterComponent } from './user/register/register.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LayoutModule } from '@progress/kendo-angular-layout';
     EventsListComponent,
     ContactComponent,
     LoginComponent,
-    CustomerComponent
+    CustomerComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,7 @@ import { EventsListComponent } from 'app/events/events-list.component';
 import { ContactComponent } from 'app/contact/contact.component';
 import { LoginComponent } from "app/user/login/login.component";
 import { CustomerComponent } from "app/customer/customer.component";
+import { RegisterComponent } from "app/user/register/register.component";
 
 const routes: Routes = [
   {
@@ -17,7 +18,7 @@ const routes: Routes = [
   }
   ,
   {
-    path: 'login', component: LoginComponent
+    path: 'SignUp', component: RegisterComponent
   },
   { path: 'customer', component: CustomerComponent }
 ];

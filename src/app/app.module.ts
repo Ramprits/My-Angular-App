@@ -2,7 +2,7 @@ import './rxjs.extension';
 import { LoginComponent } from './user/login/login.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,11 +29,13 @@ import { LayoutModule } from '@progress/kendo-angular-layout';
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ButtonsModule,
-    GridModule, LayoutModule
+    GridModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
